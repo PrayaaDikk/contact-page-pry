@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Web Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwindcss -->
+    <link rel="stylesheet" href="../src/output.css" />
+  </head>
+  <body class="font-bv relative text-[#111729] pb-10">
+    <div class="relative z-10">
+      <nav class="px-[4rem] py-[1rem] w-full max-[1024px]:px-10">
+        <img src="./svg/contact-form-icon.svg" alt="icons" />
+      </nav>
+      <div class="my-[2rem] w-full">
+        <div class="w-[650px] m-auto text-center px-10">
+          <h1
+            class="text-[4rem] text-white font-semibold leading-[4.75rem] max-[1024px]:text-[3.2rem]"
+          >
+            Interested in our business pricing?
+          </h1>
+          <p
+            class="mt-7 text-[2rem] text-white font-normal max-[1024px]:text-[1.6rem]"
+          >
+            Fill out the form to view details and we’ll contact you as soon as
+            possible.
+          </p>
+        </div>
+        <form
+          class="relative m-10 min-[1025px]:w-[60%] min-[1025px]:m-auto grid gap-y-[30px] p-6 rounded-lg mt-16 min-[1025px]:mt-16"
+        >
+          <div
+            class="bg-white opacity-20 h-full w-full absolute rounded-lg"
+          ></div>
+          <div class="relative">
+            <div class="grid grid-cols-2 gap-[25px] max-[640px]:grid-cols-1">
+              <div>
+                <label>Name</label><br />
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Ethan Johnson"
+                  class="input-base"
+                />
+              </div>
+              <div>
+                <label>Company Email</label><br />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="ethan@johnson.com"
+                  class="input-base"
+                />
+              </div>
+              <div>
+                <label>Company Size</label><br />
+                <div class="input-dropdown">
+                  <input
+                    type="text"
+                    name="company-size"
+                    id="company-size"
+                    value="50-100 employees"
+                  />
+                  <img src="./svg/Expand_down.svg" />
+                </div>
+              </div>
+              <div>
+                <label>Subject</label><br />
+                <div class="input-dropdown">
+                  <input
+                    type="text"
+                    name="company-size"
+                    id="company-size"
+                    value="Building Landing pages"
+                  />
+                  <img src="./svg/Expand_down.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <label>Message</label><br />
+            <textarea
+              name="message"
+              id="message"
+              class="resize-none h-[200px]"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="bg-[#F8FAFC] text-[#4036A9] font-bold p-4 rounded-xl"
+          >
+            Contact Sales
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
